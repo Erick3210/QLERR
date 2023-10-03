@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-WebServiceSOAP" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WebServiceSOAP"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WebServiceSOAP" destdir="${build.generated.dir}/jax-wsCache/WebServiceSOAP" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WebServiceSOAP/wsdl/localhost_8080/LWS_ASSESS_OOF_V2/WebServiceSOAP.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/LWS_ASSESS_OOF_V2/WebServiceSOAP?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WebServiceSOAP/wsdl/localhost_8080/LWS_ASSESS_OOF_V2/WebServiceSOAP.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WebServiceSOAP"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WebServiceSOAP">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WebServiceSOAP" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/webservice"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WebServiceSOAP"/>
+    </target>
+    <target name="wsimport-client-SWA1PDF" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SWA1PDF"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SWA1PDF" destdir="${build.generated.dir}/jax-wsCache/SWA1PDF" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/SWA1PDF/wsdl/localhost_8080/ServiciosWebDeAprendizaje/SWA1PDF.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ServiciosWebDeAprendizaje/SWA1PDF?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/SWA1PDF/wsdl/localhost_8080/ServiciosWebDeAprendizaje/SWA1PDF.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SWA1PDF"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SWA1PDF">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SWA1PDF" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/swapdf"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/SWA1PDF"/>
+    </target>
+    <target name="wsimport-client-Media" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Media"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Media" destdir="${build.generated.dir}/jax-wsCache/Media" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Media/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Media.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Marco_De_Servicios_Estadisticos2/Media?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Media/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Media.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Media"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Media">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Media" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios_estadisticos"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Media"/>
+    </target>
+    <target name="wsimport-client-Moda" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Moda"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Moda" destdir="${build.generated.dir}/jax-wsCache/Moda" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Moda/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Moda.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Marco_De_Servicios_Estadisticos2/Moda?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Moda/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Moda.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Moda"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Moda">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Moda" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios_estadisticos"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Moda"/>
+    </target>
+    <target name="wsimport-client-Mediana" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Mediana"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Mediana" destdir="${build.generated.dir}/jax-wsCache/Mediana" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Mediana/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Mediana.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Marco_De_Servicios_Estadisticos2/Mediana?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Mediana/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Mediana.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Mediana"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Mediana">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Mediana" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios_estadisticos"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Mediana"/>
+    </target>
+    <target name="wsimport-client-Varianza" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Varianza"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Varianza" destdir="${build.generated.dir}/jax-wsCache/Varianza" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Varianza/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Varianza.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Marco_De_Servicios_Estadisticos2/Varianza?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Varianza/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Varianza.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Varianza"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Varianza">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Varianza" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios_estadisticos"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Varianza"/>
+    </target>
+    <target name="wsimport-client-Rango" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Rango"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Rango" destdir="${build.generated.dir}/jax-wsCache/Rango" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Rango/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Rango.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Marco_De_Servicios_Estadisticos2/Rango?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Rango/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Rango.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Rango"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Rango">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Rango" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios_estadisticos"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Rango"/>
+    </target>
+    <target name="wsimport-client-DesviacionEstandar" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DesviacionEstandar"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DesviacionEstandar" destdir="${build.generated.dir}/jax-wsCache/DesviacionEstandar" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/DesviacionEstandar/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/DesviacionEstandar.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Marco_De_Servicios_Estadisticos2/DesviacionEstandar?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/DesviacionEstandar/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/DesviacionEstandar.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DesviacionEstandar"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DesviacionEstandar">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DesviacionEstandar" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios_estadisticos"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/DesviacionEstandar"/>
+    </target>
+    <target name="wsimport-client-Curtosis" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Curtosis"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Curtosis" destdir="${build.generated.dir}/jax-wsCache/Curtosis" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Curtosis/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Curtosis.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Marco_De_Servicios_Estadisticos2/Curtosis?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Curtosis/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Curtosis.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Curtosis"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Curtosis">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Curtosis" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios_estadisticos"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Curtosis"/>
+    </target>
+    <target name="wsimport-client-Correlacion" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Correlacion"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Correlacion" destdir="${build.generated.dir}/jax-wsCache/Correlacion" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Correlacion/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Correlacion.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Marco_De_Servicios_Estadisticos2/Correlacion?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Correlacion/wsdl/localhost_8080/Marco_De_Servicios_Estadisticos2/Correlacion.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Correlacion"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Correlacion">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Correlacion" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios_estadisticos"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Correlacion"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-WebServiceSOAP, wsimport-client-SWA1PDF, wsimport-client-Media, wsimport-client-Moda, wsimport-client-Mediana, wsimport-client-Varianza, wsimport-client-Rango, wsimport-client-DesviacionEstandar, wsimport-client-Curtosis, wsimport-client-Correlacion"/>
+</project>

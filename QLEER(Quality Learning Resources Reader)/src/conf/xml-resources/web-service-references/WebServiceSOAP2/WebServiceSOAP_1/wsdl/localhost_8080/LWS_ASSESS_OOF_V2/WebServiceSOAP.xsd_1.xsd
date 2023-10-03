@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebService/">
+
+<xs:element name="Alineacion" type="tns:Alineacion"/>
+
+<xs:element name="AlineacionResponse" type="tns:AlineacionResponse"/>
+
+<xs:element name="Aviabilidad" type="tns:Aviabilidad"/>
+
+<xs:element name="AviabilidadResponse" type="tns:AviabilidadResponse"/>
+
+<xs:element name="ColorDeFondo" type="tns:ColorDeFondo"/>
+
+<xs:element name="ColorDeFondoResponse" type="tns:ColorDeFondoResponse"/>
+
+<xs:element name="ColorDeLaFuente" type="tns:ColorDeLaFuente"/>
+
+<xs:element name="ColorDeLaFuenteResponse" type="tns:ColorDeLaFuenteResponse"/>
+
+<xs:element name="Completitud" type="tns:Completitud"/>
+
+<xs:element name="CompletitudResponse" type="tns:CompletitudResponse"/>
+
+<xs:element name="Defecto1" type="tns:Defecto1"/>
+
+<xs:element name="Defecto1Response" type="tns:Defecto1Response"/>
+
+<xs:element name="Defecto2" type="tns:Defecto2"/>
+
+<xs:element name="Defecto2Response" type="tns:Defecto2Response"/>
+
+<xs:element name="Defecto3" type="tns:Defecto3"/>
+
+<xs:element name="Defecto3Response" type="tns:Defecto3Response"/>
+
+<xs:element name="Defecto4" type="tns:Defecto4"/>
+
+<xs:element name="Defecto4Response" type="tns:Defecto4Response"/>
+
+<xs:element name="Defecto5" type="tns:Defecto5"/>
+
+<xs:element name="Defecto5Response" type="tns:Defecto5Response"/>
+
+<xs:element name="LWSProcess" type="tns:LWSProcess"/>
+
+<xs:element name="LWSProcessResponse" type="tns:LWSProcessResponse"/>
+
+<xs:element name="TamañoDeLaFuente" type="tns:TamañoDeLaFuente"/>
+
+<xs:element name="TamañoDeLaFuenteResponse" type="tns:TamañoDeLaFuenteResponse"/>
+
+<xs:element name="TipoDeLetra" type="tns:TipoDeLetra"/>
+
+<xs:element name="TipoDeLetraResponse" type="tns:TipoDeLetraResponse"/>
+
+<xs:element name="obtenerDirecciondelRecurso" type="tns:obtenerDirecciondelRecurso"/>
+
+<xs:element name="obtenerDirecciondelRecursoResponse" type="tns:obtenerDirecciondelRecursoResponse"/>
+
+<xs:element name="redeability" type="tns:redeability"/>
+
+<xs:element name="redeabilityResponse" type="tns:redeabilityResponse"/>
+
+<xs:element name="usability" type="tns:usability"/>
+
+<xs:element name="usabilityResponse" type="tns:usabilityResponse"/>
+
+<xs:complexType name="Defecto3">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto3Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto2">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeLaFuente">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeLaFuenteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto5">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto5Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto4">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto4Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto1">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="redeability">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+<xs:element name="n2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="redeabilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Completitud">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CompletitudResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeFondo">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeFondoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TipoDeLetra">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TipoDeLetraResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerDirecciondelRecurso">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerDirecciondelRecursoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Aviabilidad">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AviabilidadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LWSProcess">
+<xs:sequence>
+<xs:element name="WSDLurl" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LWSProcessResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usability">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+<xs:element name="n2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usabilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Alineacion">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AlineacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TamañoDeLaFuente">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TamañoDeLaFuenteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

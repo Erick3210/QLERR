@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="HojaPopUpS.css">
+        <style>
+            .table5 {
+                width: 100%;
+                margin-top: 10px;
+                border-collapse: collapse;
+                text-align: center;
+                background-color: #fff;
+                color: #333;
+                font-size: 1.2rem;
+            }
+
+            .table5 th,
+            .table5 td {
+                padding: 10px;
+                border: 1px solid #ccc;
+
+            }
+
+            .table5 th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+                height: -100000%;
+            }
+        </style>
+
+
+    </head>
+    <body bgcolor="#99E9E2">
+        <div class="contenedor">
+            <center>
+                <center><h1>¡Calculo de la Legibilidad!</h1></center>
+            </center>     
+
+            <font size="5px"><p style="text-align: justify;">
+                Legibilidad: Se define como la capacidad de presentar la información del contenido de un 
+                servicio Web de aprendizaje de forma clara y entendible.
+            </p></font>
+
+            <font size="5px"><p style="text-align: justify;">
+                El criterio de legibilidad se ha definido tomando en cuenta 
+                5 sub-atributos: orientación del texto, tipo de fuente, color de fuente, tamaño 
+                de la fuente y color del fondo, el siguiente diagrama muestra una parte del modelo de calidad 
+                que representa la legibilidad de un recurso de aprendizaje y como obtenerla: 
+            </p></font>
+
+            <center><img src="ReusabilidadAL.PNG" align="center" width="390" height="1100"></center> 
+
+
+            <font size="5px"><p>
+                Los pesos de los criterios del sub-atributo de legibilidad son:
+            </p></font>
+
+
+
+
+            <table style=" " class="table5 ">
+                <tr>
+                    <th colspan="3"><p><font size="5" >Legibilidad</font></p></th>
+
+
+                </tr>
+
+
+
+                <tr>
+
+                    <th><h3>Sub-Atributos</h3></th>
+                    <th><h3>Ponderaciones</h3></th>
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">C1</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">3.3333%</span></center></td> 
+
+                </tr>
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">C2</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">3.3333%</span></center></td> 
+
+                </tr>
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">C3</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">3.3333%</span></center></td> 
+
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">C4</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">3.3333%</span></center></td> 
+
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">C5</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">3.3333%</span></center></td> 
+
+                </tr>
+            </table>
+
+
+            <font size="5px"><p>
+                Donde:
+            </p></font>
+
+            <font size="5px"><p>
+                C1: Es el valor del sub-atributo orientación del texto.
+            </p></font><!-- comment -->
+
+            <font size="5px"><p>
+                C2: Es el valor del sub-atributo tipo de fuente.
+            </p></font>
+
+            <font size="5px"><p>
+                C3: Es el valor del sub-atributo color de fuente.
+            </p></font>
+
+            <font size="5px"><p>
+                C4: Es el valor del sub-atributo tamaño de la fuente.
+            </p></font>
+
+            <font size="5px"><p>
+                C5: Es el valor del sub-atributo color del fondo.
+            </p></font>
+
+            <br>
+
+            <font size="5px"><p>*Para obtener el valor de legibilidad se utilizo la siguiente formula:</p></font>
+
+            <center><img src="FormulaRL.PNG" align="center" width="230" height="95"></center> 
+
+            <font size="5px"><p>
+                ∑i=1 Ci: Es el valor de la sumatoria de los sub-atributos
+                (Alineación del texto, Tipo de letra, Color de la fuente, Tamaño de fuente y Color de fondo) de L [1].
+            </p></font>
+
+            <font size="5px"><p>
+                c: Es el valor de cada sub-atributo que pertenece a L.
+            </p></font>
+
+            <font size="5px"><p>
+                n:  Es el número total de sub-atributos tomados en cuenta para legibilidad, por lo tanto n = 5.
+            </p></font>
+
+
+
+            <br>
+            <h2>Referencias:</h2>
+
+            <font size="5px"><p>
+
+                [1]. Salinas Román, (2017), Marco Orientado a Objetos para Medir la Calidad en 
+                Servicios Web de Aprendizaje, Tesis de Maestría, Tecnológico Nacional de México 
+                Campus Centro Nacional de Investigación y Desarrollo Tecnológico, Cuernavaca, 
+                Morelos.
+
+            </p></font>
+
+
+
+
+        </div>
+    </body>
+</html>

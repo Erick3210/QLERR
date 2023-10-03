@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://ServiciosPrincipal/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ServiciosPrincipal/">
+
+<xs:element name="LegibilidadCorrelacion" type="tns:LegibilidadCorrelacion"/>
+
+<xs:element name="LegibilidadCorrelacionResponse" type="tns:LegibilidadCorrelacionResponse"/>
+
+<xs:element name="LegibilidadDesviacionEstandar" type="tns:LegibilidadDesviacionEstandar"/>
+
+<xs:element name="LegibilidadDesviacionEstandarResponse" type="tns:LegibilidadDesviacionEstandarResponse"/>
+
+<xs:element name="LegibilidadMedia" type="tns:LegibilidadMedia"/>
+
+<xs:element name="LegibilidadMediaResponse" type="tns:LegibilidadMediaResponse"/>
+
+<xs:element name="LegibilidadMediana" type="tns:LegibilidadMediana"/>
+
+<xs:element name="LegibilidadMedianaResponse" type="tns:LegibilidadMedianaResponse"/>
+
+<xs:element name="LegibilidadModa" type="tns:LegibilidadModa"/>
+
+<xs:element name="LegibilidadModaResponse" type="tns:LegibilidadModaResponse"/>
+
+<xs:element name="LegibilidadRango" type="tns:LegibilidadRango"/>
+
+<xs:element name="LegibilidadRangoResponse" type="tns:LegibilidadRangoResponse"/>
+
+<xs:element name="LegibilidadVarianza" type="tns:LegibilidadVarianza"/>
+
+<xs:element name="LegibilidadVarianzaResponse" type="tns:LegibilidadVarianzaResponse"/>
+
+<xs:complexType name="LegibilidadMedia">
+<xs:sequence>
+<xs:element name="arreglo" type="xs:double" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadMediaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadMediana">
+<xs:sequence>
+<xs:element name="arreglo" type="xs:double" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadMedianaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadDesviacionEstandar">
+<xs:sequence>
+<xs:element name="arreglo" type="xs:double" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadDesviacionEstandarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadModa">
+<xs:sequence>
+<xs:element name="arreglo" type="xs:double" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadModaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadRango">
+<xs:sequence>
+<xs:element name="arreglo" type="xs:double" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadRangoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadCorrelacion">
+<xs:sequence>
+<xs:element name="arreglo" type="xs:double" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadCorrelacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadVarianza">
+<xs:sequence>
+<xs:element name="arreglo" type="xs:double" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LegibilidadVarianzaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

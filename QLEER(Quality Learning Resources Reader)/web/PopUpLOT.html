@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="HojaPopUps.css">
+
+        <style>
+            .table5 {
+                width: 100%;
+                margin-top: 10px;
+                border-collapse: collapse;
+                text-align: center;
+                background-color: #fff;
+                color: #333;
+                font-size: 1.2rem;
+            }
+
+            .table5 th,
+            .table5 td {
+                padding: 10px;
+                border: 1px solid #ccc;
+
+            }
+
+            .table5 th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+                height: -100000%;
+            }
+        </style>
+
+
+    </head>
+    <body bgcolor="#99E9E2">
+        <div class="contenedor">
+            <center>
+                <h1>Orientación del texto</h1>
+            </center>     
+            <h2>Orientación del texto:</h2>
+
+
+            <font size="5px"><p style="text-align: justify;">
+                El sub-atributo de orientación del texto se encarga de identificar si el texto de un recurso
+                de aprendizaje esta alineado, para identificar esto se estableció que los parrafos del texto de un 
+                recurso tengan una alineacion justificada, a esto se le denomino parrafos adentro, por lo que todos los
+                parrafos adentro de un recurso de aprendizaje se promediarán para sacar el porcentaje del criterio de 
+                orientación del texto.
+            </p></font>
+
+            <font size="5px"><p style="text-align: justify;">
+                El siguiente diagrama del modelo de calidad implementado en este sistema indica que
+                los criterios del sub-atributo orientación del texto son:
+            </p></font>
+
+            <center><img src="LegibilidadAOT.PNG" align="center" width="250" height="380"></center>
+            <br>
+
+            <font size="5px"><p>
+                Los pesos de los criterios del sub-atributo orientación del texto son:
+            </p></font>
+
+
+
+
+            <table style=" " class="table5 ">
+                <tr>
+                    <th colspan="3"><p><font size="5" ><center>Orientación del texto</center></font></p></th>
+
+
+                </tr>
+
+
+
+                <tr>
+
+                    <th><h3>Sub-Atributos</h3></th>
+                    <th><h3>Ponderaciones</h3></th>
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Párrafos Adentro</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">1.0%</span></center></td> 
+
+                </tr>
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Párrafos Afuera</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">0%</span></center></td> 
+
+                </tr>
+
+            </table>
+
+
+
+            <font size="5px"><p>
+                Para obtener el valor del sub-atributo orientación del texto se utilizo la siguiente formula:
+            </p></font>
+
+            <center><img src="FormulaOT1.PNG" align="center" width="520" height="265"></center>
+
+            <font size="5px"><p style="text-align: justify;">
+                OT: Orientación del texto es igual a la diferencia del valor de los párrafos adentro (PAD) 
+                 entre el total de párrafos (TP).
+
+            </p></font>
+
+            <font size="5px"><p>
+                PAD: Es el valor de los párrafos adentro.
+            </p></font>
+
+
+            <font size="5px"><p>
+                TP: Total de párrafos.
+            </p></font>
+
+
+            <br>
+
+
+        </div>
+    </body>
+</html>

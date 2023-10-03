@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://ServiciosPrincipal/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ServiciosPrincipal/">
+
+<xs:element name="ReusabilidadMedia" type="tns:ReusabilidadMedia"/>
+
+<xs:element name="ReusabilidadMediaResponse" type="tns:ReusabilidadMediaResponse"/>
+
+<xs:element name="ReusabilidadRango" type="tns:ReusabilidadRango"/>
+
+<xs:element name="ReusabilidadRangoResponse" type="tns:ReusabilidadRangoResponse"/>
+
+<xs:complexType name="ReusabilidadRango">
+<xs:sequence>
+<xs:element name="n1" type="xs:double"/>
+<xs:element name="n2" type="xs:double"/>
+<xs:element name="n3" type="xs:double"/>
+<xs:element name="n4" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ReusabilidadRangoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ReusabilidadMedia">
+<xs:sequence>
+<xs:element name="n1" type="xs:double"/>
+<xs:element name="n2" type="xs:double"/>
+<xs:element name="n3" type="xs:double"/>
+<xs:element name="n4" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ReusabilidadMediaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

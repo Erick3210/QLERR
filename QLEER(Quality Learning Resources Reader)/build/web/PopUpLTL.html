@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="HojaPopUps.css">
+
+        <style>
+            .table5 {
+                width: 100%;
+                margin-top: 10px;
+                border-collapse: collapse;
+                text-align: center;
+                background-color: #fff;
+                color: #333;
+                font-size: 1.2rem;
+            }
+
+            .table5 th,
+            .table5 td {
+                padding: 10px;
+                border: 1px solid #ccc;
+
+            }
+
+            .table5 th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+                height: -100000%;
+            }
+        </style>
+
+    </head>
+    <body bgcolor="#99E9E2">
+        <div class="contenedor">
+            <center>
+                <h1>Tipo de Letra</h1>
+            </center>     
+            <h2>Tipo de Letra:</h2>
+
+
+            <font size="5px"><p style="text-align: justify;">
+                El sub-atributo de tipo de letra se encarga de identificar el tipo de letra correcto de un recurso
+                de aprendizaje, para identificar esto se estableció que los tipos de letra correctos son Arial y Times Roman,
+                por lo que todas las letras con estos tipos de fuentes(tipo de letra) de un recurso de aprendizaje,
+                se promediarán para sacar el porcentaje del criterio tipo de letra.
+            </p></font>
+
+            <font size="5px"><p style="text-align: justify;">
+                El siguiente diagrama del modelo de calidad implementado en este sistema indica que
+                los criterios del sub-atributo tipo de letra son:
+            </p></font>
+
+            <center><img src="LegibilidadATL.PNG" align="center" width="250" height="365"></center>
+            <br>
+
+            <font size="5px"><p>
+                Los pesos de los criterios del sub-atributo tipo de letra son:
+            </p></font>
+
+
+            <table style=" " class="table5 ">
+                <tr>
+                    <th colspan="3"><p><font size="5" ><center>Tipo de Letra</center></font></p></th>
+
+
+                </tr>
+
+
+
+                <tr>
+
+                    <th><h3>Sub-Atributos</h3></th>
+                    <th><h3>Ponderaciones</h3></th>
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Arial</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">1.0%</span></center></td> 
+
+                </tr>
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Times Roman</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">0.9%</span></center></td> 
+
+                </tr>
+                
+                 <tr>
+                    <td><center><span style="font-size: 22.9px;">Otros tipos de letra</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">0%</span></center></td> 
+
+                </tr>
+
+            </table>
+
+
+            <br>
+
+            <font size="5px"><p>
+                Antes de calcular el valor del sub-atributo tipo de letra, se debe calcular el valor de aquellos 
+                criterios con una ponderacion menor a uno, este criterio es el valor de las palabras en 
+                Times Roman (TR).
+            </p></font>
+
+            <font size="5px"><p>
+                Para obtener el valor del criterio de las palabras en Times Roman se utilizo la siguiente formula:
+            </p></font>
+
+            <center><img src="FormulaTR.PNG" align="center" width="400" height="105"></center>
+
+            <font size="5px"><p>
+                TR: Es el valor de las palabras en Times Roman.
+            </p></font>
+
+            <br>
+
+            <font size="5px"><p>
+                Para obtener el valor del sub-atributo tipos de letra se utilizo la siguiente formula:
+            </p></font>
+
+            <center><img src="FormulaTL1.PNG" align="center" width="550" height="220"></center>
+
+            <font size="5px"><p>
+                TL: Tipo de letra es igual a la adición de los valores de las palabras en Arial (AR) más el 
+                valor de las palabras en Times Roman (TR), entre el valor del total de palabras. 
+            </p></font>
+
+            <font size="5px"><p>
+                AR: Es el valor de las palabras en Arial.
+            </p></font>
+
+            <font size="5px"><p>
+                TR: Es el valor de las palabras en Times Roman.
+            </p></font>
+
+            <font size="5px"><p>
+                OT: Es el valor de las palabras en otros tipos de letra, el cual no se toma en cuenta para obtener el valor 
+                del criterio tipo de letra.
+            </p></font>
+
+
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="HojaPopUps.css">
+    </head>
+    <body bgcolor="#99E9E2" >
+        <div class="contenedor">
+            <center>
+                 <h1>¡Calculo de la Informatividad!</h1>
+            </center>     
+                 <font size="5px"><p>
+                     Uno de los sub-atributos para medir la reusabilidad de un recurso de aprendizaje es la informatividad.
+            
+                 </p></font>
+
+                 <font size="5px"><p>
+                     Informatividad: Según el modelo de calidad implementado en este medidor, indica que la informatividad de 
+                     un recurso de aprendizaje, es la sumatoria de los valores de las etiquetas schoolLevel, domain, topic, sub, contentType, SWATypes,
+                     y la etiqueta adicional que engloba todas las demas SWAInformation.
+                 </p></font>
+                 
+        
+                 <font size="5px"><p>
+                     El siguiente diagrama muestra una parte del modelo de calidad que representa la informatividad de un recurso de
+                     aprendizaje y como obtenerla:
+                 </p></font>  
+                 
+                 
+                 <center><img src="ReusabilidadAI.PNG" align="center" width="330" height="930"></center>
+                 
+                 <br>
+
+                 <font size="5px"><p>Para obtener el valor de la informatividad se utilizo la siguiente formula:</p></font>
+                 
+                 <center><img src="FormulaRI.PNG" align="center" width="199" height="85"></center>
+                 
+                 <font size="5px"><p>
+                      Donde ¡Informatividad! es la sumatoria de los valores de las etiquetas presentes en el WSDL
+                      del servicio web de aprendizaje (SWA)  utilizando NuSOAP, estas etiquetas son 5: 
+                      (types, message, portType, binding y service).
+
+                 </p></font>
+                 
+                 <font size="5px"><p>
+                    E: Es el valor de la etiqueta del WSDL de un servicio Web normal, donde se asigna 
+                       1 si existe la etiqueta de lo contrario se asigna un 0. 
+                 </p></font>
+                 
+                 <font size="5px"><p>
+                  n + 1: Es el total de etiquetas que deben estar presentes en el WSDL de un SWA, 
+                        donde n toma el valor de 5, ya que es el número de etiquetas principales en 
+                        el WSDL de un servicio Web normal, el valor de 1 es para incluir el valor del 
+                        conjunto de etiquetas adicionales, por lo tanto n + 1 = 6.
+                 </p></font>
+                 
+                 <font size="5px"><p>
+                    Para obtener el valor ∆E, que es el valor del conjunto de las etiquetas adicionales, se 
+                    revisa como primera instancia que exista la etiqueta SWAInformation en el WSDL, 
+                    si la etiqueta existe se aplica la métrica definida en la sig. ecuación, esto determina si 
+                    todas las etiquetas adicionales están presentes [1].
+                 </p></font>
+                 
+                 <center><img src="FormulaAE.PNG" align="center" width="199" height="85"></center><!-- comment -->
+                 
+                 <font size="5px"><p>
+                    ∆E: Es el valor de la sumatoria de las etiquetas adicionales, estas etiquetas 
+                    son 6: SchoolLevel, Domain, Topic, Sub, ContentType y SWATypes.
+                 </p></font>
+                 
+                 <font size="5px"><p>
+                    E_A:  Es el valor de la etiqueta adicional (SWAInformation), donde se asigna 1 si existe la etiqueta de 
+                        lo contrario se asigna un 0.
+                 </p></font>
+                 
+                 <font size="5px"><p>
+                    m: Es el número total de las etiquetas adicionales, por lo tanto m = 6.
+                 </p></font>
+                 
+                 <font size="5px"><p>
+                    En caso de que la etiqueta SWAInformation no exista, ∆E automáticamente 
+                    tomará el valor de 0, debido a que la etiqueta SWAInformation engloba a 
+                    todas las demás, tal y como se ve en la siguiente figura.
+                 </p></font>
+                 
+                 <center><img src="EtiquetasI.PNG" align="center" width="480" height="455"></center>
+              
+                 <br>
+                 
+                <h2>Referencias:</h2>
+                 
+                 <font size="5px"><p>
+                      
+                    [1]. Salinas Román, (2017), Marco Orientado a Objetos para Medir la Calidad en 
+                      Servicios Web de Aprendizaje, Tesis de Maestría, Tecnológico Nacional de México 
+                      Campus Centro Nacional de Investigación y Desarrollo Tecnológico, Cuernavaca, 
+                      Morelos.
+                     
+                 </p></font>
+                 
+                 
+            
+        </div>
+    </body>
+</html>

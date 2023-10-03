@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="HojaPopUps.css">
+        
+           <style>
+            .table5 {
+                width: 100%;
+                margin-top: 10px;
+                border-collapse: collapse;
+                text-align: center;
+                background-color: #fff;
+                color: #333;
+                font-size: 1.2rem;
+            }
+
+            .table5 th,
+            .table5 td {
+                padding: 10px;
+                border: 1px solid #ccc;
+
+            }
+
+            .table5 th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+                height: -100000%;
+            }
+        </style>
+        
+    </head>
+    <body bgcolor="#99E9E2">
+        <div class="contenedor">
+            <center>
+                <h1>Color de la fuente</h1>
+            </center>     
+            <h2>Color de la fuente:</h2>
+
+
+            <font size="5px"><p style="text-align: justify;">
+                El sub-atributo de Color de la fuente se encarga de identificar el Color de la fuente (color de letra) correcto de un recurso
+                de aprendizaje, para identificar esto se estableció que los colores de la fuente correctos son negro, azul, rojo, y verde,
+                por lo que todos colores de la fuente correctos de un recurso de aprendizaje se promediarán para sacar el porcentaje del 
+                criterio color de la fuente.
+            </p></font>
+
+            <font size="5px"><p style="text-align: justify;">
+                El siguiente diagrama del modelo de calidad implementado en este sistema indica que
+                los criterios del sub-atributo color de la fuente son:
+            </p></font>
+
+            <center><img src="LegibilidadACF.PNG" align="center" width="250" height="640"></center>
+            <br>
+
+            <font size="5px"><p>
+                Los pesos de los criterios del sub-atributo tipo de letra son:
+            </p></font>
+
+
+
+            <table style=" " class="table5 ">
+                <tr>
+                    <th colspan="3"><p><font size="5" ><center>Color de la fuente</center></font></p></th>
+
+
+                </tr>
+
+
+
+                <tr>
+
+                    <th><h3>Sub-Atributos</h3></th>
+                    <th><h3>Ponderaciones</h3></th>
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Color Negro</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">16.6666%</span></center></td> 
+
+                </tr>
+                
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Color Azul</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">16.6666%</span></center></td> 
+
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Color Rojo</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">3.33332%</span></center></td> 
+
+                </tr>
+                
+                 <tr>
+                    <td><center><span style="font-size: 22.9px;">Color Verde</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">3.33332%</span></center></td> 
+
+                </tr>
+                
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Otros colores de fuente</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">0%</span></center></td> 
+
+                </tr>
+
+             
+
+            </table>
+
+
+            <br>
+
+            <font size="5px"><p style="text-align: justify;">
+                Antes de calcular el valor del criterio color de la fuente, se debe calcular el valor de aquellos 
+                sub-atributos con una ponderacion menor a uno, estos son los sub-atributos color rojo y color verde.
+            </p></font>
+
+            <font size="5px"><p>
+                Para obtener el valor del sub-atributo color rojo se utilizo la siguiente formula:
+            </p></font>
+
+            <center><img src="FormulaCR1.PNG" align="center" width="400" height="105"></center>
+
+            <font size="5px"><p>
+                CR: Es el valor de las palabras en color rojo.
+            </p></font>
+
+            <br>
+
+            <font size="5px"><p>
+                Para obtener el valor del sub-atributo color verde se utilizo la siguiente formula:
+            </p></font>
+
+            <center><img src="FormulaCV1.PNG" align="center" width="400" height="105"></center>
+
+            <font size="5px"><p>
+                CV: Es el valor de las palabras en color verde.
+            </p></font>
+
+            <br>
+
+
+            <font size="5px"><p>
+                Para obtener el valor del criterio color de la fuente se utilizo la siguiente formula:
+            </p></font>
+
+            <center><img src="FormulaCF1.PNG" align="center" width="750" height="165"></center>
+
+            <font size="5px"><p style="text-align: justify;">
+                CF: Color de fuente es igual a la adición de los valores de las palabras en color rojo (CR), 
+                color verde (CV), color negro (CN), y color azul (CA), entre el valor del total de palabras (TP). 
+            </p></font>
+
+            <font size="5px"><p>
+                CN: Es el valor de las palabras en color negro.
+            </p></font>
+
+            <font size="5px"><p>
+                CA: Es el valor de las palabras en color azul.
+            </p></font>
+
+            <font size="5px"><p>
+                CR: Es el valor de las palabras en color rojo.
+            </p></font>
+
+            <font size="5px"><p>
+                CV: Es el valor de las palabras en color verde.
+            </p></font>
+
+            <font size="5px"><p>
+                TP: Es el valor del total de palabras.
+            </p></font>
+
+            <font size="5px"><p style="text-align: justify;">
+                OC: Es el valor de las palabras en otros colores, el cual no se toma en cuenta para obtener el valor 
+                del criterio color de fuente.
+            </p></font>
+
+            <br>
+
+
+        </div>
+    </body>
+</html>

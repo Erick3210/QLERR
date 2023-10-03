@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consumir API</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0; /* Color de fondo */
+                margin: 0;
+                padding: 0;
+                color: #333; /* Color de texto */
+            }
+
+            h1 {
+                background-color: #3498db; /* Color de fondo del encabezado */
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+
+            form {
+                background-color: #fff; /* Color de fondo del formulario */
+                max-width: 410px;
+                margin: 0 auto; /* Centrar horizontalmente */
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            }
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                background-color: #3498db; /* Color de fondo del botón */
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #2980b9; /* Cambio de color al pasar el mouse */
+            }
+
+            h2 {
+                background-color: #3498db;
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            textarea {
+                width: 80%;
+                margin-left: 90px; /* Centrar horizontalmente */
+                padding: 70px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                resize: vertical; /* Permitir redimensionamiento vertical */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Consumir API</h1>
+        <form id="api-form">
+            <label for="api-url">URL de la API:</label>
+            <input type="text" id="api-url" required>
+            <button type="submit">Obtener Datos</button>
+        </form>
+
+        <h2>Resultado:</h2>
+        <textarea id="api-response" rows="10" cols="40" readonly></textarea>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const apiForm = document.getElementById("api-form");
+                const apiUrlInput = document.getElementById("api-url");
+                const apiResponseTextarea = document.getElementById("api-response");
+
+                apiForm.addEventListener("submit", function (e) {
+                    e.preventDefault();
+
+                    const apiUrl = apiUrlInput.value;
+
+                    // Hacer una solicitud GET a la API ingresada
+                    fetch(apiUrl)
+                            .then(response => response.json())
+                            .then(data => {
+                                // Convertir el objeto JSON en una cadena legible
+                                const jsonString = JSON.stringify(data, null, 2);
+                                apiResponseTextarea.value = jsonString;
+                            })
+                            .catch(error => {
+                                apiResponseTextarea.value = "Error al cargar los datos: " + error;
+                            });
+                });
+            });
+        </script>
+    </body>
+</html>
+

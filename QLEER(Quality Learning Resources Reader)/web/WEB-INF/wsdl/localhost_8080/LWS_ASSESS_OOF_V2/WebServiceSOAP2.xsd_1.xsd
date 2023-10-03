@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebService/">
+
+<xs:element name="LWSProcess2" type="tns:LWSProcess2"/>
+
+<xs:element name="LWSProcess2Response" type="tns:LWSProcess2Response"/>
+
+<xs:element name="redeability" type="tns:redeability"/>
+
+<xs:element name="redeabilityResponse" type="tns:redeabilityResponse"/>
+
+<xs:element name="usability" type="tns:usability"/>
+
+<xs:element name="usabilityResponse" type="tns:usabilityResponse"/>
+
+<xs:complexType name="redeability">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+<xs:element name="n2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="redeabilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usability">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+<xs:element name="n2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usabilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LWSProcess2">
+<xs:sequence>
+<xs:element name="WSDLurl" type="xs:string" minOccurs="0"/>
+<xs:element name="aFactors" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LWSProcess2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

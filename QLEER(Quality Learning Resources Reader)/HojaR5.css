@@ -1,0 +1,311 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 04-mar-2023, 12:03:37
+    Author     : efcas
+*/
+.cabecera{
+    background-color: #FFFFFF;
+    width: auto;
+    height: auto;
+    
+}
+
+
+.containerAbuelo{
+    width: auto;
+    height: auto;
+    border: solid;
+    background-image: url("Fondo Generico.PNG");
+    display:list-item block;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+
+.containerPadre{
+    width: auto;
+    height: 1080px;
+    border: solid;
+    margin:5px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    border:1px solid black;
+    background-color: #FFFFFF;
+    margin-top: 4px;
+   
+}
+
+.contenedorTitle{
+    display:flex;
+    border: solid;
+    width: auto;
+    height: 49px;
+    margin-top: 4px;
+    background: #F7ED8F; 
+}
+.titulo{
+    
+    width: 1000px;
+    height: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F7ED8F; 
+    
+}
+
+.container1{
+    border: solid;
+    width: 100%;
+    height: 1080px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    border:1px solid black;
+}
+
+.horizontal1{
+    border: solid;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+
+.horizontal2{
+    border: solid;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    
+    
+}
+.informatividad{
+     border: solid;
+    width: 100%;
+    height: 235px;
+     background: #F7ED8F;
+     display: flex;
+}
+
+
+.legibilidad{
+    border: solid;
+    width: 100%;
+    height: 820px;
+    background: #F7ED8F;
+    margin-top: 19px;
+    display: flex;
+}
+
+
+.reusabilidad{
+    border: solid;
+    width: 100%;
+    height: 235px;
+    background: #F7ED8F;
+    display: flex;
+}
+
+
+.usabilidad{
+    display: flex;
+    border: solid;
+    width: 100%;
+    height: 820px;
+   display:list-item block;
+    flex-flow: wrap;
+    background: #F7ED8F;
+    margin-top: 19px;
+    
+}
+
+
+.container2{
+    display:flex;
+    border: solid;
+    width: 40%;
+    height: 1081px;
+    background: #FFFFFF;
+    display:list-item block;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+
+.Reusabilidad1{
+
+    display:flex;
+    border: solid;
+    width: 100%;
+    height: 235px;
+    background: #F7ED8F;
+    display:list-item block;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+.Reusabilidad2{
+    margin-top: -5px;
+    display:flex;
+    border: solid;
+    width: 100%;
+    height: 820px;
+    background: #F7ED8F;
+    display:list-item block;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+.tentrada{
+    margin-top: 3px;
+    display:list-item block;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+
+
+
+.box{
+   
+    width: 230px;
+    height:42px;
+    background-color: #F0F0E2;
+    margin:26px;
+    box-sizing: border-box;
+    font-size: 25px;         
+}
+
+.container2-2{
+    display:flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height:210px;
+    background-color: #FFFFFF;
+
+}
+
+.container2-3{
+    display:flex;
+    margin-top:60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height:250px;
+    background-color: #FFFFFF;
+
+}
+
+.container2-4{
+    display:flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display:list-item block;
+    flex-flow: wrap;
+    flex-direction: column;
+    width: 540px;
+    height:782px;
+    background-color: #FFFFFF;
+
+}
+
+.tabla1{
+    display:list-item block;
+     flex-flow: wrap;
+     margin-top:-9px;
+}
+
+.tabla2{
+    
+    display:list-item block;
+     flex-flow: wrap;
+      margin-top:-9px;
+}
+
+.tabla3{
+    
+    display:list-item block;
+     flex-flow: wrap;
+      margin-top:-9px;
+}
+
+.tabla4{
+    
+    display:list-item block;
+     flex-flow: wrap;
+     margin-top:-9px;
+}
+
+.tabla5{
+    
+    display:list-item block;
+     flex-flow: wrap;
+      margin-top:-9px;
+}
+
+.container2-5{
+    display:flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    height:165px;
+    background-color: #FFFFFF;
+
+}
+
+th, td{
+  border:5px solid black;
+
+}
+
+table{
+    border:5px solid black;
+
+    
+}
+
+p{
+   margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    
+}
+
+h5{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+h4{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+h3{
+    text-align: center;
+    
+}
+
+.botonSalir{
+    margin-top: -42px;
+    margin-left: 1000px;
+    height: auto;
+}

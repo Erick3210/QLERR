@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="HojaPopUps.css">
+
+        <style>
+            .table5 {
+                width: 100%;
+                margin-top: 10px;
+                border-collapse: collapse;
+                text-align: center;
+                background-color: #fff;
+                color: #333;
+                font-size: 1.2rem;
+            }
+
+            .table5 th,
+            .table5 td {
+                padding: 10px;
+                border: 1px solid #ccc;
+
+            }
+
+            .table5 th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+                height: -100000%;
+            }
+        </style>
+
+    </head>
+    <body bgcolor="#99E9E2">
+        <div class="contenedor">
+            <center>
+                <h1>¡Sub-Atributos en Tamaño de la fuente!</h1>
+            </center>     
+            <h2>Tamaño de la fuente:</h2>
+
+
+            <font size="5px"><p>
+                El criterio tamaño de la fuente se encarga de identificar el tamaño de la fuente correcto de un recurso
+                de aprendizaje, para identificar esto se estableció que los tamaño de la fuente correctos son de 10 a 13 y de 14 a 17,
+                por lo que todas las palabras con estos tamaños de la fuente(tamaños de letra) de un recurso de aprendizaje,
+                se promediarán para sacar el porcentaje del criterio tamaño de la fuente.
+            </p></font>
+
+            <font size="5px"><p>
+                El siguiente diagrama del modelo de calidad implementado en este sistema indica que
+                los sub-atributos del criterio tamaño de la fuente son:
+            </p></font>
+
+            <center><img src="LegibilidadATF.PNG" align="center" width="250" height="685"></center>
+            <br>
+
+            <font size="5px"><p>
+                Los pesos de los sub-atributos del criterio tamaño de la fuente son:
+            </p></font>
+
+
+
+
+            <table style=" " class="table5 ">
+                <tr>
+                    <th colspan="3"><p><font size="5" ><center>Tamaño de la fuente</center></font></p></th>
+
+
+                </tr>
+
+
+
+                <tr>
+
+                    <th><h3>Sub-Atributos</h3></th>
+                    <th><h3>Ponderaciones</h3></th>
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Un Tamaño(<6 puntos)</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">0%</span></center></td> 
+
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Un Tamaño(6 a 9 puntos)</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">0%</span></center></td> 
+
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Un Tamaño(10 a 13 puntos)</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">16.6666%</span></center></td> 
+
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Un Tamaño(14 a 17 puntos)</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">16.6666%</span></center></td> 
+
+                </tr>
+
+                <tr>
+                    <td><center><span style="font-size: 22.9px;">Un Tamaño(>18 puntos)</span></center></td> 
+                <td><center><span style="font-size: 22.9px;">0%</span></center></td> 
+
+                </tr>
+
+
+
+            </table>
+
+
+            <br>
+
+            <font size="5px"><p>
+                Antes de calcular el valor del criterio tamaño de la fuente, se debe calcular el valor de aquellos 
+                sub-atributos con una ponderacion menor a uno, este sub-atributo es el valor de las palabras que tienen un 
+                tamaño de la fuente de 14 a 17 puntos.
+            </p></font>
+
+            <font size="5px"><p>
+                Para obtener el valor del sub-atributo de las palabras que tienen un 
+                tamaño de la fuente de 14 a 17 puntos se utilizó la siguiente formula:
+            </p></font>
+
+            <center><img src="FormulaTMC.PNG" align="center" width="480" height="105"></center>
+
+            <font size="5px"><p>
+                TMC: Es el valor del tamaño de la fuente entre el rango de 14 a 17 puntos. 
+            </p></font>
+
+            <br>
+
+            <font size="5px"><p>
+                Para obtener el valor del criterio tamaño de la fuente se utilizo la siguiente formula:
+            </p></font>
+
+            <center><img src="FormulaTF1.PNG" align="center" width="550" height="170"></center>
+
+            <font size="5px"><p>
+                TF: Tamaño de la fuente es igual a la adición del valor de las palabras en un rango de tamaño de 10 a 13 
+                puntos (TMT) más el valor de las palabras en un rango de tamaño de 14 a 17 puntos (TMC), entre el valor del 
+                total de palabras (TP).
+            </p></font>
+
+            <font size="5px"><p>
+                TMC: Es el valor del tamaño de la fuente entre el rango de 14 a 17 puntos. 
+            </p></font>
+
+            <font size="5px"><p>
+                TMT: Es el valor del tamaño de la fuente entre el rango de 10 a 13 puntos.
+            </p></font>
+
+            <font size="5px"><p>
+                TP: Es el valor del total de palabras.
+            </p></font>
+
+            <br>
+
+        </div>
+    </body>
+</html>

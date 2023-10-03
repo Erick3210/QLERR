@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebService/">
+
+<xs:element name="Accesibility" type="tns:Accesibility"/>
+
+<xs:element name="AccesibilityResponse" type="tns:AccesibilityResponse"/>
+
+<xs:element name="AlineacionDocX" type="tns:AlineacionDocX"/>
+
+<xs:element name="AlineacionDocXResponse" type="tns:AlineacionDocXResponse"/>
+
+<xs:element name="AlineacionPDF" type="tns:AlineacionPDF"/>
+
+<xs:element name="AlineacionPDFResponse" type="tns:AlineacionPDFResponse"/>
+
+<xs:element name="Aviabilidad" type="tns:Aviabilidad"/>
+
+<xs:element name="AviabilidadResponse" type="tns:AviabilidadResponse"/>
+
+<xs:element name="ColorDeFondoDocX" type="tns:ColorDeFondoDocX"/>
+
+<xs:element name="ColorDeFondoDocXResponse" type="tns:ColorDeFondoDocXResponse"/>
+
+<xs:element name="ColorDeFondoPDF" type="tns:ColorDeFondoPDF"/>
+
+<xs:element name="ColorDeFondoPDFResponse" type="tns:ColorDeFondoPDFResponse"/>
+
+<xs:element name="ColorDeLaFuenteDocX" type="tns:ColorDeLaFuenteDocX"/>
+
+<xs:element name="ColorDeLaFuenteDocXResponse" type="tns:ColorDeLaFuenteDocXResponse"/>
+
+<xs:element name="ColorDeLaFuentePDF" type="tns:ColorDeLaFuentePDF"/>
+
+<xs:element name="ColorDeLaFuentePDFResponse" type="tns:ColorDeLaFuentePDFResponse"/>
+
+<xs:element name="Completitud" type="tns:Completitud"/>
+
+<xs:element name="CompletitudResponse" type="tns:CompletitudResponse"/>
+
+<xs:element name="Defecto1" type="tns:Defecto1"/>
+
+<xs:element name="Defecto1Response" type="tns:Defecto1Response"/>
+
+<xs:element name="Defecto2" type="tns:Defecto2"/>
+
+<xs:element name="Defecto2Response" type="tns:Defecto2Response"/>
+
+<xs:element name="Defecto3" type="tns:Defecto3"/>
+
+<xs:element name="Defecto3Response" type="tns:Defecto3Response"/>
+
+<xs:element name="Defecto4" type="tns:Defecto4"/>
+
+<xs:element name="Defecto4Response" type="tns:Defecto4Response"/>
+
+<xs:element name="Defecto5" type="tns:Defecto5"/>
+
+<xs:element name="Defecto5Response" type="tns:Defecto5Response"/>
+
+<xs:element name="LWSProcess" type="tns:LWSProcess"/>
+
+<xs:element name="LWSProcessResponse" type="tns:LWSProcessResponse"/>
+
+<xs:element name="TamañoDeLaFuenteDocX" type="tns:TamañoDeLaFuenteDocX"/>
+
+<xs:element name="TamañoDeLaFuenteDocXResponse" type="tns:TamañoDeLaFuenteDocXResponse"/>
+
+<xs:element name="TamañoDeLaFuentePDF" type="tns:TamañoDeLaFuentePDF"/>
+
+<xs:element name="TamañoDeLaFuentePDFResponse" type="tns:TamañoDeLaFuentePDFResponse"/>
+
+<xs:element name="TipoDeLetraDocX" type="tns:TipoDeLetraDocX"/>
+
+<xs:element name="TipoDeLetraDocXResponse" type="tns:TipoDeLetraDocXResponse"/>
+
+<xs:element name="TipoDeLetraPDF" type="tns:TipoDeLetraPDF"/>
+
+<xs:element name="TipoDeLetraPDFResponse" type="tns:TipoDeLetraPDFResponse"/>
+
+<xs:element name="redeability" type="tns:redeability"/>
+
+<xs:element name="redeabilityResponse" type="tns:redeabilityResponse"/>
+
+<xs:element name="usability" type="tns:usability"/>
+
+<xs:element name="usabilityResponse" type="tns:usabilityResponse"/>
+
+<xs:complexType name="Defecto3">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto3Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TamañoDeLaFuenteDocX">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TamañoDeLaFuenteDocXResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto2">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto2Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto5">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto5Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto4">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto4Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TipoDeLetraPDF">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TipoDeLetraPDFResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeFondoDocX">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeFondoDocXResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto1">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Defecto1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="redeability">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+<xs:element name="n2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="redeabilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TamañoDeLaFuentePDF">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TamañoDeLaFuentePDFResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Completitud">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CompletitudResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeLaFuentePDF">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeLaFuentePDFResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeFondoPDF">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeFondoPDFResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AlineacionPDF">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AlineacionPDFResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AlineacionDocX">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AlineacionDocXResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TipoDeLetraDocX">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TipoDeLetraDocXResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Aviabilidad">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AviabilidadResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LWSProcess">
+<xs:sequence>
+<xs:element name="WSDLurl" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LWSProcessResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Accesibility">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+<xs:element name="n2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AccesibilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usability">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+<xs:element name="n2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usabilityResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeLaFuenteDocX">
+<xs:sequence>
+<xs:element name="n1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ColorDeLaFuenteDocXResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

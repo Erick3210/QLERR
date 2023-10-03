@@ -1,0 +1,26 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 07-feb-2023, 10:57:20
+    Author     : efcas
+*/
+
+.contenedor{
+    text-align: justify;
+    
+    
+}
+
+
+p{
+   margin-left: auto;
+    margin-right: auto; 
+    text-align: justify;
+}
+
+.criterios{
+    
+    margin-left: 200px;
+}

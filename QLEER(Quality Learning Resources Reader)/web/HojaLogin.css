@@ -1,0 +1,24 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 dic. 2022, 18:38:20
+    Author     : Erick F. Castillo
+*/
+.cabecera{
+    background-color: #FFFFFF;
+    width: auto;
+    height: auto;
+    
+}
+
+.containerAbuelo{
+    width: auto;
+    height: 750px;
+    border: solid;
+    background-image: url("Fondo Login.PNG");
+    display:list-item block;
+    flex-flow: wrap;
+    flex-direction: column;
+}
